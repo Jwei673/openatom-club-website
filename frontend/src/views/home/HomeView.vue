@@ -127,7 +127,9 @@ import { ref, onMounted } from 'vue'
 import { getContentList } from '../../api/content'
 import { getActivityList } from '../../api/activity'
 import { getProjectList } from '../../api/project'
-import type { Content, Activity, Project } from '../../types'
+import type { Content } from '../../types/content'
+import type { Activity } from '../../types/activity'
+import type { Project } from '../../types/project'
 
 const newsList = ref<Content[]>([])
 const activityList = ref<Activity[]>([])

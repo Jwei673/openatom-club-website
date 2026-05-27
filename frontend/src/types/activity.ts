@@ -18,10 +18,17 @@ export interface Activity {
 }
 
 export interface ActivityQuery {
-  page: number
-  size: number
+  page?: number
+  size?: number
   status?: string
   keyword?: string
+}
+
+export interface PageResult<T> {
+  records: T[]
+  total: number
+  page: number
+  size: number
 }
 
 export interface ActivityRegistration {

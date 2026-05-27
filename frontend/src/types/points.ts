@@ -10,8 +10,15 @@ export interface PointsRecord {
 }
 
 export interface PointsQuery {
-  page: number
-  size: number
+  page?: number
+  size?: number
   userId?: number
   type?: string
+}
+
+export interface PageResult<T> {
+  records: T[]
+  total: number
+  page: number
+  size: number
 }

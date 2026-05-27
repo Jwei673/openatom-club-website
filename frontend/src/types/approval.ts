@@ -15,9 +15,16 @@ export interface Approval {
 }
 
 export interface ApprovalQuery {
-  page: number
-  size: number
+  page?: number
+  size?: number
   type?: string
   status?: string
   applicantId?: number
+}
+
+export interface PageResult<T> {
+  records: T[]
+  total: number
+  page: number
+  size: number
 }

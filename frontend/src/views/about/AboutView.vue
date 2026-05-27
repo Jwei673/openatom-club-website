@@ -88,7 +88,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import type { Department } from '../../types'
+import type { Department } from '../../types/about'
 
 const departments = ref<Department[]>([
   {

@@ -15,9 +15,16 @@ export interface Content {
 }
 
 export interface ContentQuery {
-  page: number
-  size: number
+  page?: number
+  size?: number
   type?: string
   status?: string
   keyword?: string
+}
+
+export interface PageResult<T> {
+  records: T[]
+  total: number
+  page: number
+  size: number
 }

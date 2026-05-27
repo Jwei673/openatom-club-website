@@ -20,3 +20,8 @@ export const getPointsRanking = (params: any): Promise<PageResult<any>> => {
 export const addPointsRecord = (data: Partial<PointsRecord>): Promise<PointsRecord> => {
   return request.post('/points', data)
 }
+
+// 删除积分记录（管理员）
+export const deletePointsRecord = (id: number): Promise<void> => {
+  return request.delete(`/points/${id}`)
+}
